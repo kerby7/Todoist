@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f6f6f6; /* Light gray background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #333; /* Dark gray text color */
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.TodoWrapper {
+  background: #fff; /* White background */
+  margin-top: 5rem; /* Reduced top margin for better alignment */
+  padding: 2rem;
+  border-radius: 10px; /* Increased border radius for softer edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow for depth */
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: #f0f0f0; /* Light gray input background */
+  border: 1px solid #ccc; /* Light gray border */
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #333; /* Dark gray text color */
+}
+
+.todo-input::placeholder {
+  color: #aaa; /* Light gray placeholder text color */
+}
+
+.todo-btn {
+  background: #8758ff;
+  color: #fff;
+  border: none;
+  padding: 0.55rem 1.5rem; /* Increased padding for better button appearance */
+  cursor: pointer;
+  border-radius: 5px; /* Added border radius for rounded corners */
+  margin-left: 1rem;
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9; /* Light gray background for todo items */
+  color: #333; /* Dark gray text color */
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow for depth */
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.incompleted {
+  color: #8758ff; /* Purple color for incomplete tasks */
+  cursor: pointer;
+}
+
+.completed {
+  color: #777; /* Gray color for completed tasks */
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 470px){
+  .todo-btn{
+    margin-left: 7rem;
+  }
+
+  .todo-input{
+    margin-left: 1rem;
+  }
+}
